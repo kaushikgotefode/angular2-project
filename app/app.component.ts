@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HeroComponent } from './hero/hero.component';
 
 @Component({
@@ -8,9 +8,10 @@ import { HeroComponent } from './hero/hero.component';
 
 })
 export class AppComponent {
+
     title: string;
     heros: any;
-    selectedHero: Object
+    selectedHero: HeroComponent
     constructor() {
         this.title = "Tour of Heroes";
         const HEROES: HeroComponent[] = [

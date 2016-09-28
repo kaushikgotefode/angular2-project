@@ -8,23 +8,6 @@
         </li>
       </ul>
     </div>
-    <div class="hero-detail col-sm-8" *ngIf="selectedHero">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>{{selectedHero.name}}</h2>
-        </div>
-        <div class="col-sm-6">
-          <img src="{{selectedHero.image}}">
-        </div>
-        <div class="col-sm-6">
-          <label>Id: </label>{{selectedHero.id}}
-          <br>
-          <label>Name: </label>
-          <input type="text" [(ngModel)]="selectedHero.name" placeholder="name" />
-        </div>
-      </div>
-      <p class="para1">{{selectedHero.p1}}</p>
-      <p class="para2">{{selectedHero.p2}}</p>
-    </div>
+    <hero-detail [hero]="selectedHero"></hero-detail>
   </div>
 </div>
