@@ -11,9 +11,7 @@ export class HeroDetailComponent {
 
 
     @Input('hero') selectedHero: HeroComponent
-        //we can write this as @Input() hero:HeroComponent
-    hero: Object;
-    constructor() {
-        this.hero = HeroComponent;
-    }
+    //we can write this as @Input() hero:HeroComponent
+    constructor() {}
 }
+	
