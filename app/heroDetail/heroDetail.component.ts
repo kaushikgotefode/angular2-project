@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { HeroComponent } from "./../hero/hero.component"
+import { Heroes } from "./../hero/hero"
 
 @Component({
     selector: 'hero-detail',
@@ -10,8 +10,7 @@ import { HeroComponent } from "./../hero/hero.component"
 export class HeroDetailComponent {
 
 
-    @Input('hero') selectedHero: HeroComponent
-    //we can write this as @Input() hero:HeroComponent
+    @Input('hero') selectedHero: Heroes
+        //we can write this as @Input() hero:HeroComponent
     constructor() {}
 }
-	

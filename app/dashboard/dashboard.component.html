@@ -1,0 +1,8 @@
+<h3>Top Heroes</h3>
+<div class="grid grid-pad row">
+  <div *ngFor="let hero of heroes; let i = index" (click)="gotoDetail(hero)" class="col-md-3">
+    <div class="module hero" *ngIf="i<4">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </div>
+</div>

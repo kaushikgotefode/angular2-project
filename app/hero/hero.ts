@@ -2,10 +2,9 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "hero-component",
-    template: './hero/hero.component.html',
 })
 
-export class HeroComponent {
+export class Heroes {
     id: number;
     name: string;
     p1: string;
